@@ -9,9 +9,9 @@ let link = document.getElementById("link");
 // méthode pour avoir un nombre random
 const secretNumber = Math.floor(Math.random() * 501);
 
-// Nombre de vie illimité temporairement** 
+
 // nombre d'essai
-// let attempts = 10;
+let attempts = 10;
 
 // Ce bloc de code fonctionne que au click sur "button"
 button.onclick = function () {
@@ -28,16 +28,15 @@ button.onclick = function () {
       message.innerText = "Le nombre est plus petit que " + input.value + "";
       message.style.color = "#999";
     }
-// Nombre de vie illimité temporairement** 
-//     // Si le nombre d'essai atteint 0 alors l'input + btn = none et link = flexc
-//     if (attempts == 0) {
-//       message.innerText =
-//         "T'es trop guez, il fallait trouvé " + secretNumber + " !";
-//       message.style.color = "red";
-//       form.style.display = "none";
-//       link.style.display = "flex";
-//     }
-//     attempts--;
+    // Si le nombre d'essai atteint 0 alors l'input + btn = none et link = flexc
+    if (attempts == 0) {
+      message.innerText =
+        "T'es trop guez, il fallait trouvé " + secretNumber + " !";
+      message.style.color = "red";
+      form.style.display = "none";
+      link.style.display = "flex";
+    }
+    attempts--;
 
     // Si le nombre à été trouver alors l'input + btn = none et link = flex
 
