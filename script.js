@@ -11,7 +11,7 @@ const secretNumber = Math.floor(Math.random() * 501);
 
 
 // nombre d'essai
-let attempts = 10;
+let attempts = 3;
 
 // Ce bloc de code fonctionne que au click sur "button"
 button.onclick = function () {
