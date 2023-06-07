@@ -9,9 +9,8 @@ let link = document.getElementById("link");
 // méthode pour avoir un nombre random
 const secretNumber = Math.floor(Math.random() * 501);
 
-
 // nombre d'essai
-let attempts = 3;
+let attempts = 10;
 
 // Ce bloc de code fonctionne que au click sur "button"
 button.onclick = function () {
@@ -31,7 +30,7 @@ button.onclick = function () {
     // Si le nombre d'essai atteint 0 alors l'input + btn = none et link = flexc
     if (attempts == 0) {
       message.innerText =
-        "T'es trop guez, il fallait trouvé " + secretNumber + " !";
+        "Tu as perdu, il fallait trouvé " + secretNumber + " !";
       message.style.color = "red";
       form.style.display = "none";
       link.style.display = "flex";
